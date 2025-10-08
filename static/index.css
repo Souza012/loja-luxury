@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+CO+Guides&family=Playwrite+IN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Share+Tech&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', Helvetica, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background: #f4f4f6;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 70px;
+    width:100%;
+    background-color: #1a4669;
+  }
+  
+  header h1 {
+    padding: 0px;
+    font-size: 70px;
+    color: #ffffff;
+  }
+
+  header h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  header span{
+    color: #2cfd19;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  #search-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #ccc;
+    width: 550px;
+    outline: none;
+  }
+
+  #search-input::placeholder{
+    color: #999;
+    opacity: 1;
+  }
+  
+  #search-btn {
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 0px solid #ccc;
+    border-left: 6px;
+    background: #656666;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+  }
+
+  #search-btn:hover{
+    cursor: pointer;
+    background-color: #09aee0;
+  }
+
+  .autocomplete-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+    width: 100%; /* Agora pega apenas a largura do input */
+    top: 100%;   /* Fica logo abaixo do input */
+    left: 0;
+}
+
+.autocomplete-items li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-items li:hover {
+    background-color: #ffffff;
+}
+  
+  
+  /* Container dos produtos */
+  .prev{
+    margin-left: -15px;
+    margin-top: 45px;
+}
+
+.next{
+  margin-right: -15px;
+  margin-top: 45px;
+}
+
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Card do produto */
+  .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  }
+  
+  .product-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  p {
+    color: #555;
+    margin-bottom: 12px;
+  }
+
+  /* Carousel do produto */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .carousel-img {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-img.active {
+    display: block;
+  }
+  
+  /* Botões de seta */
+  .carousel button.prev,
+  .carousel button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    user-select: none;
+  }
+  
+  .carousel button.prev { left: 5px; }
+  .carousel button.next { right: 5px; }
+  
+  .carousel button:hover {
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  
+  /* Botões de compra */
+  .btn-buy {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: #263d24;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px 5px 0 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn-buy:hover {
+    background: #2cfd19;
+    color: #000;
+  }
+
+  .btn-details {
+    background-color: #124279;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-details:hover {
+    background-color: #0a9fe4;
+}
+
+.product-details {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+  .color-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    gap: 20px;
+  }
+
+.color-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-circle:hover {
+    transform: scale(1.5);
+    border: 2px solid #000;
+}
+
+.color-circle.selected {
+    outline: 3px solid #ff0000;
+}
+  
+  /* Botão WhatsApp fixo */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    display: flex;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .whatsapp-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
