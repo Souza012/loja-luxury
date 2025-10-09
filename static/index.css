@@ -39,9 +39,7 @@ header span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* Permite quebra em telas pequenas */
   gap: 5px;
-  /* Espaço entre input e botão */
   margin: 50px 0;
 }
 
@@ -73,6 +71,24 @@ header span {
 
 #search-btn:hover {
   background-color: #09aee0;
+}
+
+.aviso-compra {
+  background-color: #1a4669;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 12px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.aviso-compra p {
+  margin: 0;
+}
+
+.aviso-compra strong{
+  color: #2cfd19;
 }
 
 
@@ -308,11 +324,19 @@ h2 {
   gap: 20px;
 }
 
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+
 .footer-info h3 {
   margin: 0;
   font-size: 24px;
   font-weight: 700;
-  color: #2CFD19;
+  color: #ffffff;
 }
 
 .footer-info p {
@@ -332,8 +356,8 @@ h2 {
   justify-content: center;
   background-color: #1A4669;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   transition: all 0.3s;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -359,12 +383,10 @@ h2 {
   }
 
   .product-container {
-    grid-template-columns: 1fr;
     padding: 0 15px;
   }
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
 
   .carousel-img {
@@ -391,6 +413,15 @@ h2 {
 }
 
 @media (max-width: 480px) {
+  .frase-topo{
+    font-size: 12px;
+  }
+
+  .logo{
+    margin-left: -10px;
+    margin-bottom: 26px;
+    height: 70px !important;
+  }
 
   header h1 {
     font-size: 30px;

@@ -10,20 +10,26 @@
 </head>
 
 <body>
-    <div style="background-color: #1a4669;  padding: 10px; text-align: center;">
-        <span style="color: white; text-align: center;">Gostou dos nossos produtos? E não é do Vale?</span>
-        <a style="text-decoration: none; color: rgb(0, 255, 0);"
-            href="https://wa.me/5512981860808?text=Olá%20não%20sou%20do%20vale,%20gostaria%20de%20fazer%20um%20orçamento"
-            target="_blank">
-            Nos chame aqui!
-        </a>
-
-
+    <div style="background-color: #1a4669; padding: 35px; display: flex; align-items: center; justify-content: center; position: relative; flex-wrap: wrap;">
+    
+        <img class="logo" src="static/imgs/logo.png" alt="Logo Luxury Estofados" 
+             style="position: absolute; left: 15px; height: 150px; width: auto; object-fit: contain;">
+    
+        <div class="frase-topo" style="text-align: center;">
+            <span style="color: white; display: block;">Gostou dos nossos produtos? E não é do Vale?</span>
+            <a style="text-decoration: none; color: rgb(0, 255, 0); font-weight: 500;"
+               href="https://wa.me/5512981860808?text=Olá%20não%20sou%20do%20vale,%20gostaria%20de%20fazer%20um%20orçamento"
+               target="_blank">
+               Nos chame aqui!
+            </a>
+        </div>
     </div>
+    
+    
     <header>
         <h1>Loja de Estofados</h1>
         <h3>Diretamente da fábrica</h3>
-        <h3><span>Frete Grátis</span> para todo o vale paraiba</h3>
+        <h3><span>Frete Grátis</span> para todo o Vale Paraíba</h3>
         <div class="search-container">
             <input type="text" id="search-input" placeholder="Buscar produto...">
             <button id="search-btn">Buscar</button>
@@ -31,14 +37,19 @@
 
     </header>
 
+    <div class="aviso-compra">
+        <p>🛋️ Para adquirir nossos produtos, basta escolher a <strong>cor</strong> e a opção de compra <strong>Cartão</strong> ou <strong>Pix</strong>.</p>
+      </div>
+      
+
     <main class="product-container">
         <!-- Produto 1 -->
 <div class="card" data-name="Puffe Grande, pufe, Pufe, puffe">
     <div class="carousel">
-        <img src="static/imgs/puffe1.png" alt="Puffe Grande" class="carousel-img active">
-        <img src="static/imgs/puffe2.png" alt="Puffe Grande" class="carousel-img">
-        <img src="static/imgs/puffe3.png" alt="Puffe Grande" class="carousel-img">
-        <img src="static/imgs/puffe4.png" alt="Puffe Grande" class="carousel-img">
+        <img src="static/imgs/puffeP.png" alt="Puffe Grande" class="carousel-img active">
+        <img src="static/imgs/puffeA.png" alt="Puffe Grande" class="carousel-img">
+        <img src="static/imgs/puffeB.png" alt="Puffe Grande" class="carousel-img">
+        <img src="static/imgs/puffeR.png" alt="Puffe Grande" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
@@ -53,15 +64,15 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tcQxTH"
-            data-pix="https://pay.sunize.com.br/XRZWOUxI" data-cor="Preto" style="background:black;"></div>
+            data-pix="https://pay.sunize.com.br/XRZWOUxI" data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tdjqYJ"
-            data-pix="https://pay.sunize.com.br/CvSggHsR" data-cor="Azul" style="background:blue;"></div>
+            data-pix="https://pay.sunize.com.br/CvSggHsR" data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tdM7uv"
             data-pix="https://pay.sunize.com.br/krqOLtMj" data-cor="Branco"
-            style="background:white; border:1px solid #ccc;"></div>
+            style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816te83ga"
             data-pix="https://pay.sunize.com.br/cFHpYgDN" data-cor="Rosa"
-            style="background:rgb(255, 0, 234);"></div>
+            style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details">Ver detalhes</button>
@@ -82,10 +93,10 @@
     <!-- Produto 2 -->
     <div class="card" data-name="Maca Estética, maca, Macaa">
         <div class="carousel">
-            <img src="static/imgs/maca2.png" alt="Maca Estética" class="carousel-img active">
-            <img src="static/imgs/maca1.jpeg" alt="Maca Estética" class="carousel-img">
-            <img src="static/imgs/maca3.png" alt="Maca Estética" class="carousel-img">
-            <img src="static/imgs/maca4.png" alt="Maca Estética" class="carousel-img">
+            <img src="static/imgs/macaP.jpeg" alt="Maca Estética" class="carousel-img active">
+            <img src="static/imgs/macaA.png" alt="Maca Estética" class="carousel-img">
+            <img src="static/imgs/macaB.png" alt="Maca Estética" class="carousel-img">
+            <img src="static/imgs/macaR.png" alt="Maca Estética" class="carousel-img">
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
         </div>
@@ -100,13 +111,13 @@
         <!-- Cores -->
         <div class="color-selector">
             <div class="color-circle" data-cartao="https://pag.ae/816teBAw3" data-pix="https://pay.sunize.com.br/VuGWDIgz"
-                data-cor="Preto" style="background:black;"></div>
+                data-cor="Preto" style="background:black;" data-index="0"></div>
             <div class="color-circle" data-cartao="https://pag.ae/816tf1wcH" data-pix="https://pay.sunize.com.br/kZSGotWl"
-                data-cor="Azul" style="background:blue;"></div>
+                data-cor="Azul" style="background:blue;" data-index="1"></div>
             <div class="color-circle" data-cartao="https://pag.ae/816tfrbb7" data-pix="https://pay.sunize.com.br/RoBPVNpO"
-                data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+                data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
             <div class="color-circle" data-cartao="https://pag.ae/816tfLD2R" data-pix="https://pay.sunize.com.br/uUsfNVeA"
-                data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+                data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
         </div>
 
         <button class="btn-details">Ver detalhes</button>
@@ -130,10 +141,10 @@
         <!-- Produto 3 -->
 <div class="card" data-name="Puffe Palito, Pufe, pufe, puffe">
     <div class="carousel">
-        <img src="static/imgs/puffePalito3.png" alt="Puffe Palito" class="carousel-img active">
-        <img src="static/imgs/puffePalito2.png" alt="Puffe Palito" class="carousel-img">
-        <img src="static/imgs/puffePalito1.jpg" alt="Puffe Palito" class="carousel-img">
-        <img src="static/imgs/puffePalito4.png" alt="Puffe Palito" class="carousel-img">
+        <img src="static/imgs/puffePalitoP.png" alt="Puffe Palito" class="carousel-img active">
+        <img src="static/imgs/puffePalitoA.png" alt="Puffe Palito" class="carousel-img">
+        <img src="static/imgs/puffePalitoB.jpg" alt="Puffe Palito" class="carousel-img">
+        <img src="static/imgs/puffePalitoR.png" alt="Puffe Palito" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
@@ -148,15 +159,15 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tgrosJ"
-            data-pix="https://pay.sunize.com.br/wqJlazyj" data-cor="Preto" style="background:black;"></div>
+            data-pix="https://pay.sunize.com.br/wqJlazyj" data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tgWNb2"
-            data-pix="https://pay.sunize.com.br/PsPnwXII" data-cor="Azul" style="background:blue;"></div>
+            data-pix="https://pay.sunize.com.br/PsPnwXII" data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816thnJG3"
             data-pix="https://pay.sunize.com.br/fMwNDoQg" data-cor="Branco"
-            style="background:white; border:1px solid #ccc;"></div>
+            style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816thMoKs"
             data-pix="https://pay.sunize.com.br/ZEEooqDh" data-cor="Rosa"
-            style="background:rgb(255, 0, 234);"></div>
+            style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details">Ver detalhes</button>
@@ -180,10 +191,10 @@
         <!-- Produto 4 -->
 <div class="card" data-name="Poltrona Opala, poltrona">
     <div class="carousel">
-        <img src="static/imgs/Poltrona1.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img active">
-        <img src="static/imgs/Poltrona2.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img">
-        <img src="static/imgs/Poltrona3.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img">
-        <img src="static/imgs/Poltrona4.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img">
+        <img src="static/imgs/PoltronaP.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img active">
+        <img src="static/imgs/PoltronaA.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img">
+        <img src="static/imgs/PoltronaB.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img">
+        <img src="static/imgs/PoltronaR.png" style="height: 340px;" alt="Poltrona Opala" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
@@ -199,13 +210,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tign2R" data-pix="https://pay.sunize.com.br/cSeSyHIF"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tiDxr3" data-pix="https://pay.sunize.com.br/JcqUyGBC"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tjiiuv" data-pix="https://pay.sunize.com.br/tYPWHHxM"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tjEJHJ" data-pix="https://pay.sunize.com.br/qJrWWwSM"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe4">Ver detalhes</button>
@@ -230,10 +241,10 @@
         <!-- Produto 5 -->
 <div class="card" data-name="Poltrona Canadá, poltrona">
     <div class="carousel">
-        <img src="static/imgs/Poltrona Canadá1.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img active">
-        <img src="static/imgs/Poltrona Canadá2.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img">
-        <img src="static/imgs/Poltrona Canadá3.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img">
-        <img src="static/imgs/Poltrona Canadá4.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img">
+        <img src="static/imgs/Poltrona CanadáP.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img active">
+        <img src="static/imgs/Poltrona CanadáA.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img">
+        <img src="static/imgs/Poltrona CanadáB.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img">
+        <img src="static/imgs/Poltrona CanadáR.png" style="height: 340px;" alt="Poltrona Canadá" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
@@ -249,13 +260,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tkUWcH" data-pix="https://pay.sunize.com.br/UoDpgbPi"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tmf77N" data-pix="https://pay.sunize.com.br/uiHqzmyO"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tm-9hN" data-pix="https://pay.sunize.com.br/hbJeKKLi"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tnkqcH" data-pix="https://pay.sunize.com.br/zVmUyrGo"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe5">Ver detalhes</button>
@@ -280,10 +291,10 @@
       <!-- Produto 6 -->
 <div class="card" data-name="Cabeceira Cama de Solteiro, cabeceira">
     <div class="carousel">
-        <img src="static/imgs/cabeceiraS1.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img active">
-        <img src="static/imgs/cabeceiraS2.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
-        <img src="static/imgs/cabeceiraS3.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
-        <img src="static/imgs/cabeceiraS4.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
+        <img src="static/imgs/cabeceiraSP.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img active">
+        <img src="static/imgs/cabeceiraSA.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
+        <img src="static/imgs/cabeceiraSB.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
+        <img src="static/imgs/cabeceiraSR.png" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
         <img src="static/imgs/MedidaCamaS.webp" style="height: 340px;" alt="Cabeceira Cama de Solteiro" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
@@ -300,13 +311,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tnSNX2" data-pix="https://pay.sunize.com.br/IOQbUTgy"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tocT-v" data-pix="https://pay.sunize.com.br/HdeRzZyI"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816toyVcN" data-pix="https://pay.sunize.com.br/kIAfmjdc"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816toVVr7" data-pix="https://pay.sunize.com.br/IIgXhEKx"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe6">Ver detalhes</button>
@@ -318,7 +329,7 @@
             decoração.</p>
         <p><strong>Material:</strong> Estrutura em madeira de reflorestamento, espuma de alta densidade e
             revestimento em tecido de alta qualidade, resistente e fácil de limpar.</p>
-        <p><strong>Dimensões:</strong> 110cm (largura) x 60cm (altura) x 10cm (profundidade)</p>
+        <p><strong>Dimensões:</strong> 90cm (largura) x 55cm (altura) x 5cm (profundidade)</p>
         <p><strong>Garantia:</strong> 6 meses contra defeitos de fabricação.</p>
     </div>
 
@@ -331,10 +342,10 @@
         <!-- Produto 7 -->
 <div class="card" data-name="Cebeceira Cama de Casal, , cabeceira">
     <div class="carousel">
-        <img src="static/imgs/cabeceiraC2.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img active">
-        <img src="static/imgs/cabeceiraC1.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
-        <img src="static/imgs/cabeceiraC3.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
-        <img src="static/imgs/cabeceiraC4.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
+        <img src="static/imgs/cabeceiraCP.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img active">
+        <img src="static/imgs/cabeceiraCA.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
+        <img src="static/imgs/cabeceiraCB.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
+        <img src="static/imgs/cabeceiraCR.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
         <img src="static/imgs/MedidaCamaC.png" style="height: 340px;" alt="Cabeceira Cama de Casal" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
@@ -351,13 +362,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tppvxJ" data-pix="https://pay.sunize.com.br/idNNlhzZ"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tpHTHJ" data-pix="https://pay.sunize.com.br/TRCsoJsY"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tq41r2" data-pix="https://pay.sunize.com.br/KsIoQzXZ"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tqt62J" data-pix="https://pay.sunize.com.br/pQilpLCq"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe7">Ver detalhes</button>
@@ -369,7 +380,7 @@
             qualquer tipo de decoração.</p>
         <p><strong>Material:</strong> Estrutura em madeira de reflorestamento, espuma de alta densidade e
             revestimento em tecido de excelente qualidade, macio ao toque e fácil de limpar.</p>
-        <p><strong>Dimensões:</strong> 140cm (largura) x 60cm (altura) x 10cm (profundidade)</p>
+        <p><strong>Dimensões:</strong> 140cm (largura) x 1.25cm (altura) x 8cm (profundidade)</p>
         <p><strong>Garantia:</strong> 6 meses contra defeitos de fabricação.</p>
     </div>
 
@@ -382,10 +393,10 @@
      <!-- Produto 8 -->
 <div class="card" data-name="Cabeceira Cama de Casal Queen, , cabeceira">
     <div class="carousel">
-        <img src="static/imgs/CabeceiraQueen1.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img active">
-        <img src="static/imgs/CabeceiraQueen2.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
-        <img src="static/imgs/CabeceiraQueen3.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
-        <img src="static/imgs/CabeceiraQueen4.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
+        <img src="static/imgs/CabeceiraQueenP.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img active">
+        <img src="static/imgs/CabeceiraQueenA.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
+        <img src="static/imgs/CabeceiraQueenB.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
+        <img src="static/imgs/CabeceiraQueenR.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
         <img src="static/imgs/MedidaCamaQ.png" style="height: 340px;" alt="Cabeceira Cama Queen" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
@@ -402,13 +413,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tqY16a" data-pix="https://pay.sunize.com.br/vUIaDaFA"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tri362" data-pix="https://pay.sunize.com.br/yGDXWBAs"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816trRAm2" data-pix="https://pay.sunize.com.br/bbkGDLnF"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816ts96sR" data-pix="https://pay.sunize.com.br/GAvGgLxb"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe8">Ver detalhes</button>
@@ -420,7 +431,7 @@
             acolhedor ao ambiente.</p>
         <p><strong>Material:</strong> Estrutura em madeira de reflorestamento, espuma de alta densidade e
             revestimento em tecido premium, resistente e de fácil limpeza.</p>
-        <p><strong>Dimensões:</strong> 160cm (largura) x 60cm (altura) x 10cm (profundidade)</p>
+        <p><strong>Dimensões:</strong> 160cm (largura) x 56cm (altura) x 5cm (profundidade)</p>
         <p><strong>Garantia:</strong> 6 meses contra defeitos de fabricação.</p>
     </div>
 
@@ -433,10 +444,10 @@
         <!-- Produto 9 -->
 <div class="card" data-name="Cabeceira Cama King Casal, , cabeceira">
     <div class="carousel">
-        <img src="static/imgs/CabeceiraKing1.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img active">
-        <img src="static/imgs/CabeceiraKing2.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
-        <img src="static/imgs/CabeceiraKing3.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
-        <img src="static/imgs/CabeceiraKing4.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
+        <img src="static/imgs/CabeceiraKingP.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img active">
+        <img src="static/imgs/CabeceiraKingA.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
+        <img src="static/imgs/CabeceiraKingB.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
+        <img src="static/imgs/CabeceiraKingR.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
         <img src="static/imgs/MedidaCamaK.png" style="height: 340px;" alt="Cabeceira Cama King" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
@@ -453,13 +464,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tsJYw3" data-pix="https://pay.sunize.com.br/fFJuBrQI"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tt3iYH" data-pix="https://pay.sunize.com.br/MEupdIZw"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816ttmRTN" data-pix="https://pay.sunize.com.br/SJEaKNMX"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816ttGUuv" data-pix="https://pay.sunize.com.br/oUdpXucA"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe9">Ver detalhes</button>
@@ -471,7 +482,7 @@
             qualquer ambiente.</p>
         <p><strong>Material:</strong> Estrutura em madeira de reflorestamento, espuma de alta densidade e
             revestimento em tecido premium, resistente e macio ao toque, de fácil higienização.</p>
-        <p><strong>Dimensões:</strong> 195cm (largura) x 60cm (altura) x 10cm (profundidade)</p>
+        <p><strong>Dimensões:</strong> 195cm (largura) x 112cm (altura) x 9cm (profundidade)</p>
         <p><strong>Garantia:</strong> 6 meses contra defeitos de fabricação.</p>
     </div>
 
@@ -484,10 +495,10 @@
      <!-- Produto 10 -->
 <div class="card" data-name="Cabeceira + Baú Cama de Casal, , cabeceira">
     <div class="carousel">
-        <img src="static/imgs/CabeceiraBaú1.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img active">
-        <img src="static/imgs/CabeceiraBaú2.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
-        <img src="static/imgs/CabeceiraBaú3.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
-        <img src="static/imgs/CabeceiraBaú4.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
+        <img src="static/imgs/CabeceiraBaúP.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img active">
+        <img src="static/imgs/CabeceiraBaúA.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
+        <img src="static/imgs/CabeceiraBaúB.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
+        <img src="static/imgs/CabeceiraBaúR.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
         <img src="static/imgs/MedidaCBaú.png" style="height: 340px;" alt="Cabeceira + Baú Cama de Casal" class="carousel-img">
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
@@ -504,13 +515,13 @@
     <!-- Cores -->
     <div class="color-selector">
         <div class="color-circle" data-cartao="https://pag.ae/816tue_r2" data-pix="https://pay.sunize.com.br/SOohbbUX"
-            data-cor="Preto" style="background:black;"></div>
+            data-cor="Preto" style="background:black;" data-index="0"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tuFPxR" data-pix="https://pay.sunize.com.br/mXuaciJY"
-            data-cor="Azul" style="background:blue;"></div>
+            data-cor="Azul" style="background:blue;" data-index="1"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tvtZjo" data-pix="https://pay.sunize.com.br/rkrnWqMu"
-            data-cor="Branco" style="background:white; border:1px solid #ccc;"></div>
+            data-cor="Branco" style="background:white; border:1px solid #ccc;" data-index="2"></div>
         <div class="color-circle" data-cartao="https://pag.ae/816tvZwpn" data-pix="https://pay.sunize.com.br/zBFsjGRA"
-            data-cor="Rosa" style="background:rgb(255, 0, 234);"></div>
+            data-cor="Rosa" style="background:rgb(255, 0, 234);" data-index="3"></div>
     </div>
 
     <button class="btn-details" data-target="detalhe10">Ver detalhes</button>
@@ -522,7 +533,7 @@
             quarto e ainda oferece espaço extra para armazenamento, mantendo seu quarto organizado.</p>
         <p><strong>Material:</strong> Estrutura em madeira de reflorestamento, espuma de alta densidade e
             revestimento em tecido premium, resistente, macio ao toque e de fácil limpeza.</p>
-        <p><strong>Dimensões:</strong> 195cm (largura) x 60cm (altura) x 40cm (profundidade do baú)</p>
+        <p><strong>Dimensões:</strong> 140cm (largura) x 120cm (altura) x 20cm (profundidade do baú)</p>
         <p><strong>Garantia:</strong> 6 meses contra defeitos de fabricação.</p>
     </div>
 
@@ -542,16 +553,20 @@
 <footer class="footer">
     <div class="footer-container">
       <div class="footer-info">
-        <h3>Loja Segura</h3>
-        <p>Todos os direitos reservados &copy; 2025</p>
+        <h3>Loja <span style="color: #2CFD19;">100%</span> Segura</h3>
+        <img style="width: 50px; margin-right: 200px; padding: 0;" src="static/imgs/escudo.png" alt="">
       </div>
+      <p>Todos os direitos reservados &copy; 2025</p>
       <div class="footer-social">
-        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+        <a href="https://www.facebook.com/profile.php?id=61580229405960" target="_blank" class="social-icon">
           <img src="static/imgs/facebook.png" alt="Facebook">
         </a>
-        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+        <a href="https://www.instagram.com/luxuryestofados012/" target="_blank" class="social-icon">
           <img src="static/imgs/insta.png" alt="Instagram">
         </a>
+        <span style="font-family: 'Poppins'; text-align: center; margin-top:15px; font-weight: 800;">
+            Email: <a style="color: #2CFD19; font-weight:800 ; text-decoration: none;" href="luxurysuporte012@gmail.com">luxurysuporte012@gmail.com</a> 
+        </span>
       </div>
     </div>
   </footer>
@@ -695,6 +710,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+document.querySelectorAll('.card').forEach(card => {
+  const images = card.querySelectorAll('.carousel-img');
+  const colorCircles = card.querySelectorAll('.color-circle');
+
+  colorCircles.forEach(circle => {
+    circle.addEventListener('click', () => {
+      const index = parseInt(circle.dataset.index);
+
+      // Remove a imagem ativa
+      images.forEach(img => img.classList.remove('active'));
+      // Adiciona a imagem correspondente
+      images[index].classList.add('active');
+
+      // Destaque na cor selecionada
+      colorCircles.forEach(c => c.style.outline = 'none');
+      circle.style.outline = '3px solid #00ff00';
+    });
+  });
+});
+
     </script>
 
 
