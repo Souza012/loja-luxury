@@ -312,6 +312,7 @@ h2 {
   padding: 30px 20px;
   box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
   font-family: 'Poppins', sans-serif;
+  text-align: center; /* para centralizar o P em telas pequenas */
 }
 
 .footer-container {
@@ -329,8 +330,8 @@ h2 {
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+  flex: 1 1 auto;
 }
-
 
 .footer-info h3 {
   margin: 0;
@@ -343,11 +344,15 @@ h2 {
   margin: 5px 0 0;
   font-size: 14px;
   color: #e0e0e0;
+  flex-basis: 100%; /* faz o p ocupar toda largura disponível */
+  text-align: center; /* centraliza o P */
 }
 
 .footer-social {
   display: flex;
   gap: 15px;
+  flex: 1 1 auto;
+  justify-content: flex-end;
 }
 
 .social-icon {
@@ -406,6 +411,21 @@ h2 {
     min-height: 600px;
   }
 
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-info,
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-info p {
+    margin-top: 10px;
+  }
+
   .whatsapp-btn{
     height: 50px;
     width: 50px;
@@ -434,7 +454,6 @@ h2 {
 
   .search-container {
     flex-direction: row;
-    /* Input e botão empilhados */
     align-items: center;
   }
 
@@ -462,9 +481,34 @@ h2 {
 
   .footer-container {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
+
+  .footer-info {
+    align-items: center; /* centraliza H3 e P */
+  }
+
+  .footer-info h3 {
+    font-size: 20px;
+  }
+
+  .footer-info p {
+    font-size: 13px;
+  }
+
   .footer-social {
+    justify-content: center;
     margin-top: 10px;
+  }
+
+  .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social-icon img {
+    width: 28px;
+    height: 28px;
   }
 }
