@@ -7,8 +7,9 @@
   font-family: 'Poppins', Helvetica, sans-serif;
 }
 
-body {
+html, body {
   background: #f4f4f6;
+  scroll-behavior: smooth;
 }
 
 /* Header */
@@ -304,6 +305,63 @@ h2 {
   100% { transform: translate(0, 0) rotate(0deg); }
 }
 
+.payment-section {
+  background-color: #f3f4f6;
+  padding: 30px 20px;
+  margin-top: 40px;
+  text-align: center;
+  border-top: 2px solid #e2e8f0;
+}
+
+.payment-section h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #374151;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.payment-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.payment-cards img {
+  height: 50px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.payment-cards img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Estilização do menu */
+.menu {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+  color: #1A4669;
+  transform: translateY(-2px);
+}
+
 
 /* Footer sofisticado */
 .footer {
@@ -344,8 +402,8 @@ h2 {
   margin: 5px 0 0;
   font-size: 14px;
   color: #e0e0e0;
-  flex-basis: 100%; /* faz o p ocupar toda largura disponível */
-  text-align: center; /* centraliza o P */
+  flex-basis: 100%;
+  text-align: center;
 }
 
 .footer-social {
@@ -478,6 +536,36 @@ h2 {
     height: 50px;
     width: 50px;
   }
+
+  .payment-cards img {
+    height: 45px;
+    margin: 5px;
+  }
+
+  .payment-section h3 {
+    font-size: 20px;
+  }
+
+  /* Estilização do menu */
+.menu {
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.menu a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu a:hover {
+  color: #1A4669;
+  transform: translateY(-2px);
+}
 
   .footer-container {
     flex-direction: column;
