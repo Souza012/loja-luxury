@@ -17,7 +17,7 @@ header {
   text-align: center;
   padding: 70px 20px;
   width: 100%;
-  background-color: #1a4669;
+  background-color: #111111;
 }
 
 header h1 {
@@ -75,7 +75,7 @@ header span {
 }
 
 .aviso-compra {
-  background-color: #1a4669;
+  background-color: #111111;
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 12px 15px;
@@ -365,7 +365,7 @@ h2 {
 
 /* Footer sofisticado */
 .footer {
-  background-color: #1A4669;
+  background-color: #111111;
   color: #fff;
   padding: 30px 20px;
   box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
@@ -417,7 +417,7 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #1A4669;
+  background-color: #111111;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -433,7 +433,7 @@ h2 {
 
 .social-icon:hover {
   transform: scale(1.2);
-  background-color: #0d74c9;
+  background-color: #111111;
 }
 
 
